@@ -36,14 +36,10 @@ public class Test : MonoBehaviour {
 		}
 
 		Boss lastboss = new Boss();
-		int num = 0;
-		while (num <= 10)
+		for (int a = 0; a <= 10; a++)
         {
-			lastboss .Magic();
-			num += 1;
+			lastboss.Magic();
         }
-		
-
 	}
 	
 	// Update is called once per frame
