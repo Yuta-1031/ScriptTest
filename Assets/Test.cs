@@ -10,8 +10,6 @@ public class Test : MonoBehaviour {
 
 		public void Magic()
         {
-			for (int b = 0; b < 11; b++)
-			{
 				if (MP >= 5)
 				{
 					this.MP -= 5;
@@ -21,7 +19,6 @@ public class Test : MonoBehaviour {
 				{
 					Debug.Log("MPが足りないため魔法が使えない。");
 				}
-			}
         }
     }
 
@@ -39,8 +36,14 @@ public class Test : MonoBehaviour {
 		}
 
 		Boss lastboss = new Boss();
-		lastboss.Magic();
+		int num = 0;
+		while (num <= 10)
+        {
+			lastboss .Magic();
+			num += 1;
+        }
 		
+
 	}
 	
 	// Update is called once per frame
